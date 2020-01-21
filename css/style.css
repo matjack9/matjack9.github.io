@@ -3,14 +3,6 @@ body {
     background-color: #FCFCFC;
 }
 
-.container {
-    transition: color 0.2s ease-out, background 0.2s ease-out;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 42rem;
-    padding: 3rem 1.5rem 1rem;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -18,23 +10,45 @@ nav {
     margin-bottom: 3rem;
 }
 
-.home,
-.home:hover,
-.home:focus,
-.home:active {
-    font-family: 'Nanum Myeongjo', serif;
-    font-size: 1.5em;
-    font-weight: 700;
-    flex-grow: 1;
+footer {
+    display: flex;
+    font-size: 0.9em;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    justify-content: space-between;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 200;
     color: #595959;
 }
 
-.nav-link,
-.nav-link:hover,
-.nav-link:focus,
-.nav-link:active {
-    margin-left: 1.5rem;
-    color: #595959;
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+p {
+    margin: 1.75em 0;
+}
+
+img {
+    transition: opacity 0.5s;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+a {
+    color: #bd5d38;
+    text-decoration: none;
 }
 
 figure {
@@ -45,14 +59,10 @@ figure {
     align-content: center;
 }
 
-.icon {
-    font-size: 1.5em;
-    margin: .75rem;
-    -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 1.5s; /* Firefox < 16 */
-    -ms-animation: fadein 1.5s; /* Internet Explorer */
-    -o-animation: fadein 1.5s; /* Opera < 12.1 */
-    animation: fadein 1.5s;
+a:hover,
+a:focus,
+a:active {
+    color: #824027;
 }
 
 @keyframes fadein {
@@ -84,62 +94,60 @@ figure {
     to   { opacity: 1; }
 }
 
-.display-list {
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline;
-    list-style-type: none;
+.emphasis {
+    font-style: italic;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 200;
+.container {
+    transition: color 0.2s ease-out, background 0.2s ease-out;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 42rem;
+    padding: 3rem 1.5rem 1rem;
+}
+
+.nav-link,
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    margin-left: 1.5rem;
     color: #595959;
 }
 
-h1 {
+.home,
+.home:hover,
+.home:focus,
+.home:active {
+    font-family: 'Nanum Myeongjo', serif;
     font-size: 1.5em;
+    font-weight: 700;
+    flex-grow: 1;
+    color: #595959;
 }
 
-h2 {
-    font-size: 1.25rem;
-}
-
-p {
-    margin: 1.75em 0;
-}
-
-footer {
-    display: flex;
-    font-size: 0.9em;
-    margin-top: 2rem;
-    padding-top: 1rem;
+.display-list {
+    max-width: 100%;
+    flex-wrap: wrap;
     justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(33.33%, 1fr) );
 }
 
-img {
-    transition: opacity 0.5s;
-    width: 100%;
-    padding: 0.5rem 0;
+.display-list li{
+    grid-column: span 1;
 }
 
-a {
-    color: #bd5d38;
-    text-decoration: none;
-}
-
-a:hover,
-a:focus,
-a:active {
-    color: #824027;
-}
-
-.emphasis {
-    font-style: italic;
+.icon {
+    font-size: 1.5em;
+    margin: .75rem;
+    -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1.5s; /* Firefox < 16 */
+    -ms-animation: fadein 1.5s; /* Internet Explorer */
+    -o-animation: fadein 1.5s; /* Opera < 12.1 */
+    animation: fadein 1.5s;
 }
