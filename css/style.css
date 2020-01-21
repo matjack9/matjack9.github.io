@@ -94,6 +94,22 @@ a:active {
     to   { opacity: 1; }
 }
 
+.fadein {
+    -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1.5s; /* Firefox < 16 */
+    -ms-animation: fadein 1.5s; /* Internet Explorer */
+    -o-animation: fadein 1.5s; /* Opera < 12.1 */
+    animation: fadein 1.5s;
+}
+
+.fast-fadein {
+    -webkit-animation: fadein 0.75s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.75s; /* Firefox < 16 */
+    -ms-animation: fadein 0.75s; /* Internet Explorer */
+    -o-animation: fadein 0.75s; /* Opera < 12.1 */
+    animation: fadein 0.75s;
+}
+
 .emphasis {
     font-style: italic;
 }
@@ -145,9 +161,14 @@ a:active {
 .icon {
     font-size: 1.5em;
     margin: .75rem;
-    -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 1.5s; /* Firefox < 16 */
-    -ms-animation: fadein 1.5s; /* Internet Explorer */
-    -o-animation: fadein 1.5s; /* Opera < 12.1 */
-    animation: fadein 1.5s;
+}
+
+.icon-link {
+    color: #595959;
+}
+
+.icon-link:hover,
+.icon-link:focus,
+.icon-link:active {
+    color: #824027;
 }
