@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('      ___                 \n' +
+    console.log('%c      ___                 \n' +
         '     /\\__\\          ___   \n' +
         '    /:/  /         /\\  \\  \n' +
         '   /:/__/          \\:\\  \\ \n' +
@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
         '   \\/__/            /:/  /     \\:\\ \\/__/      |:|\\/__/     \\:\\ \\/__/  \n' +
         '                   /:/  /       \\:\\__\\        |:|  |        \\:\\__\\    \n' +
         '                   \\/__/         \\/__/         \\|__|         \\/__/    \n' +
-        '\n');
-    console.log('Matt Jackson - Software Engineer');
+        '\n', 'font-weight: bold; color: red');
+    console.log('%cMatt Jackson - Software Engineer', 'color: white;');
     console.log('matjack9@gmail.com');
     console.log('917-526-3166');
     console.log('https://www.linkedin.com/in/matjack/');
     console.log('https://github.com/matjack9');
-    console.log('What is the Konami Code?');
+    console.log('%cWhat is the Konami Code?', 'background-color: red; color: white;');
     app();
 });
