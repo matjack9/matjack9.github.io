@@ -1,15 +1,15 @@
 function app() {
     function addKonamiListener() {
         const konamiCode = [
-            // 'ArrowUp',
-            // 'ArrowUp',
-            // 'ArrowDown',
-            // 'ArrowDown',
-            // 'ArrowLeft',
-            // 'ArrowRight',
-            // 'ArrowLeft',
-            // 'ArrowRight',
-            // 'b',
+            'ArrowUp',
+            'ArrowUp',
+            'ArrowDown',
+            'ArrowDown',
+            'ArrowLeft',
+            'ArrowRight',
+            'ArrowLeft',
+            'ArrowRight',
+            'b',
             'a',
         ];
         let konamiCodePosition = 0;
