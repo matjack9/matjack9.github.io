@@ -110,10 +110,6 @@ a:active {
     animation: fadein 0.75s;
 }
 
-.emphasis {
-    font-style: italic;
-}
-
 .container {
     transition: color 0.2s ease-out, background 0.2s ease-out;
     margin-left: auto;
