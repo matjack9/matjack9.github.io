@@ -19,7 +19,7 @@ function app() {
             if (e.key === requiredKey) {
                 konamiCodePosition++;
                 if (konamiCodePosition === konamiCode.length) {
-                    alert('You won my email address! \n matjack9@gmail.com');
+                    alert('Congratulations! You won my email address! \n matjack9@gmail.com');
                     konamiCodePosition = 0;
                 }
             } else {
