@@ -172,3 +172,7 @@ a:active {
 .icon-link:active {
     color: #824027;
 }
+
+.info-list {
+    padding-bottom: 1rem;
+}
