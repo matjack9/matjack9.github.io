@@ -63,6 +63,15 @@ figure {
     align-content: center;
 }
 
+.left-figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: unset;
+    padding: 1em 0;
+}
+
 a:hover,
 a:focus,
 a:active {
@@ -171,6 +180,16 @@ a:active {
 .icon-link:focus,
 .icon-link:active {
     color: #824027;
+}
+
+#triplebyte-icon-link {
+    color: #4a90e2;
+}
+
+#triplebyte-icon-link:hover,
+#triplebyte-icon-link:focus,
+#triplebyte-icon-link:active {
+    color: #4a7ae2;
 }
 
 .info-list {
