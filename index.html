@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="assets/favicon.ico">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <script src="https://kit.fontawesome.com/765055301c.js" crossorigin="anonymous"></script>
     <script>
         (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -21,46 +23,237 @@
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
 </head>
-<body id="page-top">
-<div class="container">
-    <nav>
-        <a href="./index.html" class="home">Matt Jackson</a>
-        <a href="./skills.html" class="nav-link">Skills</a>
-        <a href="./projects.html" class="nav-link">Projects</a>
-        <a href="./contact.html" class="nav-link">Contact</a>
-    </nav>
-    <aside>
-        <span class="spaced">📍</span>NYC
-    </aside>
-    <main>
-        <section>
-            <p>
-                I'm Matt. I'm a software engineer with a background in project management. While organizing and optimizing work flows in real estate, I got totally hooked on code and made the jump with <a target="_blank" rel="noopener noreferrer" href="https://flatironschool.com/">Flatiron School</a>.
-            </p>
-            <p>
-                Since summer 2018, I've been working at <a target="_blank" rel="noopener noreferrer" href="https://www.publicisgroupe.com/en/services/services-publicis-media-en">Publicis Media</a> on an expansive Rails + React app for managing and delivering international advertising campaigns. I practice object-oriented design, UI engineering, as well as collaboration on a small, rugged team.
-            </p>
-            <p>
-                I'm a voracious learner, eager to implement the newest <code>`${ESNext}`</code> feature or the decades-old pattern of object aggregation. I enjoy organizing and writing code that harmonizes with the needs of my team. When I work, I make sure to thread the aims of the big picture through the daily goals I set.
-            </p>
-            <p>
-                I'm originally <a target="_blank" rel="noopener noreferrer" href="https://i.imgur.com/EIDiZb0.jpg">from NYC</a> and won't leave for bigger closets.
-            </p>
-            <p>
-                I love to <span id="walnut-tooltip"><a target="_blank" rel="noopener noreferrer" href="https://cooking.nytimes.com/recipes/1015819-chocolate-chip-cookies">bake</a><span id="walnut-tooltip-text">Add walnuts</span></span> and <a target="_blank" rel="noopener noreferrer" href="https://www.seriouseats.com/2017/03/how-to-reverse-sear-best-way-to-cook-steak.html">reverse sear steak</a>.
-            </p>
-        </section>
-        <img alt="Matt Jackson" src="assets/flatiron.jpg" class="fast-fadein">
-    </main>
-    <footer>
-        <a href="mailto:matjack9@gmail.com">
-            matjack9@gmail.com
-        </a>
-        <a href="#page-top">
-            top ^
-        </a>
-    </footer>
-</div>
+<body>
+    <header>
+        <h1>
+            <a href="#home">Matt Jackson</a>
+        </h1>
+        <nav>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="main">
+        <main>
+            <a id="home"></a>
+            <a id="skills"></a>
+            <a id="projects"></a>
+            <a id="contact"></a>
+            <section id="home">
+                <p>
+                    <span role="img" aria-label="Located in">&#128205;</span>&nbsp;&nbsp;<span>NYC</span>
+                </p>
+                <p>
+                    I'm Matt. I'm a software engineer with a background in project management. While organizing and optimizing work flows in real estate, I got totally hooked on code and made the jump with <a target="_blank" rel="noopener noreferrer" href="https://flatironschool.com/">Flatiron School</a>.
+                </p>
+                <p>
+                    Since summer 2018, I've been working at <a target="_blank" rel="noopener noreferrer" href="https://www.publicisgroupe.com/en/services/services-publicis-media-en">Publicis Media</a> on an expansive Rails + React app for managing and delivering international advertising campaigns. I practice object-oriented design, UI engineering, as well as collaboration on a small, rugged team.
+                </p>
+                <p>
+                    I'm a voracious learner, eager to implement the newest <code>`${ESNext}`</code> feature or the decades-old pattern of object aggregation. I enjoy organizing and writing code that harmonizes with the needs of my team. When I work, I make sure to thread the aims of the big picture through the daily goals I set.
+                </p>
+                <p>
+                    I'm originally <a target="_blank" rel="noopener noreferrer" href="https://i.imgur.com/EIDiZb0.jpg">from NYC</a> and won't leave for bigger closets.
+                </p>
+                <p>
+                    I love to <span id="walnut-tooltip"><a target="_blank" rel="noopener noreferrer" href="https://cooking.nytimes.com/recipes/1015819-chocolate-chip-cookies">bake</a> <span id="walnut-tooltip-text" role="tooltip">Add walnuts</span> </span> and <a target="_blank" rel="noopener noreferrer" href="https://www.seriouseats.com/2017/03/how-to-reverse-sear-best-way-to-cook-steak.html">reverse sear steak</a>.
+                </p>
+                <img alt="Matt Jackson" src="assets/flatiron.jpg" class="fade-in" id="main-img" loading="lazy">
+            </section>
+            <section id="skills">
+                <section>
+                    <h2>Technologies</h2>
+                    <ul class="display-list">
+                        <li>
+                            <figure>
+                                <i class="devicon-react-original colored fadein icon"></i>
+                                <figcaption>React</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <i class="devicon-rails-plain colored fadein icon"></i>
+                                <figcaption>Rails</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <i class="devicon-nodejs-plain colored fadein icon"></i>
+                                <figcaption>Node.js</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <i class="devicon-javascript-plain colored fadein icon"></i>
+                                <figcaption>JavaScript (ES6+)</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <i class="devicon-typescript-plain colored fadein icon"></i>
+                                <figcaption>TypeScript</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <i class="devicon-ruby-plain colored fadein icon"></i>
+                                <figcaption>Ruby</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <i class="devicon-postgresql-plain colored fadein icon"></i>
+                                <figcaption>PostgreSQL</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <i class="devicon-mongodb-plain colored fadein icon"></i>
+                                <figcaption>MongoDB</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <i class="devicon-webpack-plain colored fadein icon"></i>
+                                <figcaption>Webpack</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <i class="devicon-html5-plain colored fadein icon"></i>
+                                <figcaption>HTML5</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <i class="devicon-css3-plain colored fadein icon"></i>
+                                <figcaption>CSS3</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <i class="devicon-git-plain colored fadein icon"></i>
+                                <figcaption>Git</figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <figure class="left-figure">
+                        <a target="_blank" rel="noopener noreferrer" href="https://triplebyte.com/tb/matt-jackson-abcrci4/certificate/track/frontend">
+                            <i class="fas fa-certificate icon fadein icon-link" id="triplebyte-icon-link"></i>
+                        </a>
+                        <figcaption>
+                            <a target="_blank" rel="noopener noreferrer" href="https://triplebyte.com/tb/matt-jackson-abcrci4/certificate/track/frontend">Triplebyte Certified Frontend Engineer</a>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section>
+                    <h2>Experience</h2>
+                    <h3>MadHive, New York, NY</h3>
+                    <h4>Frontend Engineer, February 2020 - Present</h4>
+                    <p>I'll keep you posted!</p>
+                    <h3>Publicis Media, New York, NY</h3>
+                    <h4>Software Engineer, July 2018 - February 2020</h4>
+                    <ul class="info-list">
+                        <li>Develop a live React + Redux UI portal for an international advertising demand-side platform serving employees across the country</li>
+                        <li>Build and maintain a 100+ model Mongoid Rails API integrating with Amazon S3, AWS Lambda, Redis, ElasticSearch, and proprietary real-time bidder endpoints</li>
+                        <li>Spearhead the migration to Redux in the existing React application to extract application state for extensive data consistency and more deterministic renders</li>
+                        <li>Collaborate with the design and product teams to craft 40+ engaging HTML and Material-UI components including asynchronous dropdowns, user menus, custom currency inputs, and unique text input groups</li>
+                        <li>Write Jest and RSpec unit tests and also Capybara end-to-end tests with Selenium resulting in 20% code coverage increase for the CI/CD strategy</li>
+                        <li>Implemented a feature to upload Excel spreadsheets to S3, download the data with Sidekiq in Rails, and process the information as new MongoDB documents for each row, saving campaign managers over 40 hours of manual work each month</li>
+                        <li>Built a feature to RegEx parse multiple format ad unit tag scripts and insert dynamically replaced macros upon syncing with S3, saving the company thousands of dollars per month on incorrect macro insertions</li>
+                        <li>Coordinate multi-application feature development and deployments with parallel data and bidder teams</li>
+                        <li>Harmonize team coding standards in peer code review and code style meetings</li>
+                    </ul>
+                    <h3>Miller Samuel Inc., New York, NY</h3>
+                    <h4>Appraisal Manager, June 2015 - December 2017</h4>
+                    <ul class="info-list">
+                        <li>Managed the overall company workflow ranging from directing appraisers to streamlining support staff operations</li>
+                        <li>Led workflow data analysis resulting in over 10% increase in production</li>
+                        <li>Researched real estate for appraisals by utilizing relationships with property managers, public records, and TOTAL software</li>
+                    </ul>
+                </section>
+            </section>
+            <section id="projects">
+                <p>Working on some cool things and some almost as cool things.</p>
+                <p>Please come back later!</p>
+            </section>
+            <section id="contact">
+                <h2>Feel free to reach out!</h2>
+                <div style="display: inline-block; width: 100%;">
+                    <ul class="display-list">
+                        <li>
+                            <figure>
+                                <a href="mailto:matjack9@gmail.com">
+                                    <i class="fas fa-envelope icon fadein icon-link"></i>
+                                </a>
+                                <figcaption>
+                                    <a href="mailto:matjack9@gmail.com">
+                                        matjack9@gmail.com
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <a href="tel:+19175263166">
+                                    <i class="fas fa-phone icon fadein icon-link"></i>
+                                </a>
+                                <figcaption>
+                                    <a href="tel:+19175263166">
+                                        917-526-3166
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/matjack/">
+                                    <i class="fab fa-linkedin icon fadein icon-link"></i>
+                                </a>
+                                <figcaption>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/matjack/">
+                                        LinkedIn
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/matjack9">
+                                    <i class="fab fa-github icon fadein icon-link"></i>
+                                </a>
+                                <figcaption>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/matjack9">
+                                        GitHub
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@matjack9">
+                                    <i class="fab fa-medium icon fadein icon-link"></i>
+                                </a>
+                                <figcaption>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@matjack9">
+                                        Medium
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <a href="mailto:matjack9@gmail.com">
+                matjack9@gmail.com
+            </a>
+        </footer>
+    </div>
 </body>
 <script src="src/app.js"></script>
 <script src="src/index.js"></script>

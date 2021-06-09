@@ -4,9 +4,6 @@ const cacheName = `matt-jackson-${version}`;
 
 const filesToCache = [
     '/index.html',
-    '/contact.html',
-    '/skills.html',
-    '/projects.html',
     '/css/style.css',
     '/src/index.js',
     '/src/app.js',
