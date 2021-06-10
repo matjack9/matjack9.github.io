@@ -1,8 +1,8 @@
-/** update upon any site changes so service worker invalidates and replaces cache */
-const version = '1';
+const version = '2';
 const cacheName = `matt-jackson-${version}`;
 
 const filesToCache = [
+    '/',
     '/index.html',
     '/css/style.css',
     '/src/index.js',
@@ -21,7 +21,7 @@ async function main() {
 }
 
 function onInstall() {
-    console.log(`Service Worker (v${version}) installed`);
+    console.log(`Service Worker (v${version}) installed.`);
 	self.skipWaiting();
 }
 
