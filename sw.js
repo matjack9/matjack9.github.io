@@ -1,4 +1,4 @@
-const version = '2';
+const version = '3.0';
 const cacheName = `matt-jackson-${version}`;
 
 const filesToCache = [
@@ -7,7 +7,7 @@ const filesToCache = [
     '/css/style.css',
     '/src/index.js',
     '/src/app.js',
-    '/assets/flatiron.jpg'
+    '/assets/flatiron.avif'
 ];
 
 self.addEventListener('install', onInstall);
