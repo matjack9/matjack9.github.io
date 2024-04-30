@@ -125,6 +125,12 @@ nav a:not(:last-of-type) {
     background: var(--bg-color);
 }
 
+@media only screen and (max-width: 680px) {
+    .main {
+        padding: calc(3.5em + 7vw) 0 0;
+    }
+}
+
 main > section {
     display: none;
 }
@@ -155,6 +161,10 @@ section#home {
     animation-duration: 250ms;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
+}
+
+main:has(#contact:target) ~ footer {
+    display: none;
 }
 
 #home:target ~ section#home {
