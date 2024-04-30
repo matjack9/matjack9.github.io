@@ -42,9 +42,11 @@ function app() {
                     updateViaCache: 'none'
                 }).catch(console.error);
 
-                sw = swRegistration.installing || swRegistration.waiting || swRegistration.active;
-
-                navigator.serviceWorker.addEventListener('controllerchange', onControllerChange)
+                if (swRegistration) {
+                    sw = swRegistration.installing || swRegistration.waiting || swRegistration.active;
+                    
+                    navigator.serviceWorker.addEventListener('controllerchange', onControllerChange)
+                }
             } else {
                 console.log('Service worker is not supported.');
             }
