@@ -365,7 +365,14 @@ a.contact {
     color: var(--triplebyte-highlight-color);
 }
 
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
 
+.main:not(:has(#skills:target)) .only-skills {
+    display: none;
+}
 
 @media only screen and (max-width: 680px) {
     body {
