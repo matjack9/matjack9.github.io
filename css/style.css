@@ -90,6 +90,7 @@ header {
     position: absolute;
     width: 100%;
     z-index: 2;
+    row-gap: 0.5em;
 }
 
 header h1 {
@@ -125,7 +126,13 @@ nav a:not(:last-of-type) {
     background: var(--bg-color);
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 540px) {
+    .main {
+        padding: calc(4.75em + 7vw) 0 0;
+    }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 680px) {
     .main {
         padding: calc(3.5em + 7vw) 0 0;
     }
