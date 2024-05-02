@@ -1,4 +1,4 @@
-const version = '3.0';
+const version = '3.1';
 const cacheName = `matt-jackson-${version}`;
 
 const filesToCache = [
@@ -22,7 +22,7 @@ async function main() {
 
 function onInstall() {
     console.log(`Service Worker (v${version}) installed.`);
-	self.skipWaiting();
+    self.skipWaiting();
 }
 
 function onActivate(event) {
@@ -37,18 +37,18 @@ async function handleActivation() {
 
 async function cacheFiles(forceReload = false) {
     const cache = await caches.open(cacheName).catch(console.error);
-    
+
     return Promise.all(
         filesToCache.map(async function put(fileLocation) {
             try {
                 let content;
 
-				if (!forceReload) {
+                if (!forceReload) {
                     content = await cache.match(fileLocation);
-                    
-					if (content) {
-						return;
-					}
+
+                    if (content) {
+                        return;
+                    }
                 }
 
                 content = await fetch(fileLocation);
@@ -65,23 +65,23 @@ async function cacheFiles(forceReload = false) {
 
 async function clearCaches() {
     const cacheNames = await caches.keys().catch(console.error);
-    
-	const oldCacheNames = cacheNames.filter(function matchOldCache(cacheName) {
-		let [,cacheNameVersion] = cacheName.match(/^matt-jackson-(\d+)$/) || [];
+
+    const oldCacheNames = cacheNames.filter(function matchOldCache(cacheName) {
+        let [, cacheNameVersion] = cacheName.match(/^matt-jackson-(\d+)$/) || [];
         cacheNameVersion = cacheNameVersion != null ? Number(cacheNameVersion) : cacheNameVersion;
-        
-		return (
-			cacheNameVersion > 0 &&
-			version !== cacheNameVersion
-		);
+
+        return (
+            cacheNameVersion > 0 &&
+            version !== cacheNameVersion
+        );
     });
-    
-	await Promise.all(
-		oldCacheNames.map(function deleteCache(cacheName) {
-			return caches.delete(cacheName);
-		})
+
+    await Promise.all(
+        oldCacheNames.map(function deleteCache(cacheName) {
+            return caches.delete(cacheName);
+        })
     ).catch(console.error);
-    
+
     console.log('Service Worker cleared cache.');
 }
 
@@ -91,7 +91,7 @@ function onFetch(event) {
 
 async function respond(request) {
     const url = new URL(request.url);
-	const reqURL = url.pathname;
+    const reqURL = url.pathname;
     const cache = await caches.open(cacheName).catch(console.error);
     const maybeCachedResponse = await cache.match(reqURL).catch(console.error);
 
